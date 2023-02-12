@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="style2.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Popcorn</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="index1.html"> Home</li></a>
+                    <li class="menu-list-item"><a href="index1.html"> New</li></a>
+                    <li class="menu-list-item"><a href="index1.html"> Series</li></a>
+                    <li class="menu-list-item"><a href="index1.html"> Hindi Movies</li></a>
+                    <li class="menu-list-item"><a href="index1.html"> Popular</li></a>
+
+                </ul>
+            </div>
+            <div class="toggle">
+                <i class="fas fa-moon toggle-icon"></i>
+                <i class="fas fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+            </div>
+            </div>
+            
+<div class="cbody">
+    
+    <div class="cdiv">
+        <form class="cform">
+            <h3>GET IN TOUCH</h3>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Your Email id" required>
+            
+            <label for="phone">Phone no: </label>
+            <input type="text" id="phone" placeholder="Phone no" required>
+           
+           <label for="message">Your Message: </label>
+            <textarea id="message" rows="10" placeholder="How can we Help" required></textarea>
+            
+            <input class="blank" type="text" required>
+            <button type="submit" onclick="SendMail()" id="submit">Send</button>
+        </form>
+
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("tnMwGxsJI4s3qU3To");
+        })();
+    </script>
+    <script src="/app.js"></script>
+</div>
+</body>
+</html>
